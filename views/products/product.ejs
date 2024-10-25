@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product</title>
+    <link rel="stylesheet" href="/stylesheets/products/product.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <div class="page__product product">
+          <div class="product__card">
+            <h2><span>Name:</span> <%= product.name %></h2>
+          </div>
+          <div class="product__card">
+            <p><span>Description:</span> <%= product.description %></p>
+        </div>
+        <div class="product__card">
+          <p><span>Product id:</span> <%= product.id %></p>  
+        </div>
+        <div class="product__card">
+          <p><span>Price:</span> <%= product.price %></p>
+        </div>
+        <a class="product__btn" href="/products">Back to products list</a>
+      </main>
+    </div>  
+  </body>
+</html>

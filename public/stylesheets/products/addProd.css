@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande';
+}
+
+a {
+  color: red;
+}
+
+.page__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1 1 auto;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.form__inp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 7px;
+}
+input,
+textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+label {
+  font-size: 21px;
+  font-weight: 500;
+  color: brown;
+}
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.page__btn {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product__btn {
+  padding: 7px 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: green;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+.product__btn:hover {
+  background-color: darkgreen;
+  color: red;
+}

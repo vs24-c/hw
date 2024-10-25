@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product</title>
+    <link rel="stylesheet" href="/stylesheets/products/addProd.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <h1><%= product && product.id ? 'Edit Product' : 'Add Product' %></h1>
+        <div class="page__container">
+          <form
+            action="<%= product && product.id ? '/products/edit/' + product.id + '??_met=PUT' : '/products/create' %>"            
+            method="POST"
+            class="page__form form"
+          >
+            <div class="form__inp">
+              <label for="name">Pleas enter name product</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                autocapitalize="off"
+                required
+                value="<%= product?.name %>"
+              />
+            </div>
+            <div class="form__inp">
+              <label for="price">Pleas enter price product</label>
+              <input
+                type="number"
+                name="price"
+                placeholder="Name"
+                autocapitalize="off"
+                required
+                value="<%= product?.price %>"
+              />
+            </div>
+            <div class="form__inp">
+              <label for="description">Pleas enter description product</label>
+              <input
+                name="description"
+                placeholder="Description"
+                required
+                value="<%= product?.description %>"
+              ></input>
+            </div>
+            <button type="submit" class="product__btn"><%= product && product.id ? 'Edit': 'Add' %></button>
+          </form>
+          <a class="product__btn" href="/">Back to Home Page</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

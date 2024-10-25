@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande';
+}
+
+a {
+  color: red;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product__card {
+  text-align: left;
+  padding: 5px 0;
+}
+.product__card h2 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.product__card p {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.product__card span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: green;
+}
+
+.product__btn {
+  padding: 12px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: green;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.product__btn:hover {
+  background-color: darkgreen;
+  color: red;
+}
